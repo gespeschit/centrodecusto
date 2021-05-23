@@ -17,7 +17,7 @@ Neste procurei desenvolver utilizando a tecnologia PL/PGSQL do PostgreSQL. Ele p
 - 1.1.9-Vale Refeição
 - 1.1.10-FGTS
 
-Como o código de centro de custo foi criado em um campo string, ao fazer a ordenação teríamos 1,1.1,1.1.1,1.1.10,1.1.2 ... 1.1.9. 
+O problema é que o código de centro de custo foi criado em um campo string, ao fazer a ordenação teríamos 1,1.1,1.1.1,1.1.10,1.1.2 ... 1.1.9. Com esta solução a ordernação retornará correta.
 # Inclusão
 Ao realizar a inclusão de registro, retornará o primeiro campo boolean, onde se ocorrer algum erro terá o valor de false. Na segunda coluna retornar a descrição. Os campos seguintes serão de acordo com a tabela.
 
